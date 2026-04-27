@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- TÍTULO E DESCRIÇÃO OTIMIZADOS PARA SEO -->
+    <title>Doghood Daycare | Política de Privacidade</title>
+    <meta name="description" content="Conheça nossa Política de Privacidade. Saiba como coletamos, usamos e protegemos seus dados na Doghood Daycare.">
+    <meta name="robots" content="index, follow">
+    
+    <!-- FAVICON E TOUCH ICONS -->
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
+    
+    <!-- REDES SOCIAIS (OPEN GRAPH / TWITTER CARDS) -->
+    <meta property="og:title" content="Doghood Daycare – Política de Privacidade">
+    <meta property="og:description" content="Transparência e segurança com seus dados. Leia nossa Política de Privacidade.">
+    <meta property="og:image" content="https://seusite.com.br/img/social-preview.jpg">
+    <meta property="og:url" content="https://www.doghood.com.br/privacidade.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Doghood Daycare – Política de Privacidade">
+    <meta name="twitter:description" content="Transparência e segurança com seus dados.">
+    <meta name="twitter:image" content="https://seusite.com.br/img/social-preview.jpg">
+    
+    <!-- FONTES E CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CONFIGURAÇÃO DO TAILWIND (CORES PERSONALIZADAS) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        brand: {
+                            teal: '#044A53',
+                            lightTeal: '#0A7A88',
+                            pink: '#FF007F',
+                            lightPink: '#FF4DA6',
+                            surface: '#FAFAFA',
+                            soft: '#F3F4F6'
+                        }
+                    },
+                    boxShadow: {
+                        'soft-xl': '0 20px 40px -15px rgba(4, 74, 83, 0.08)',
+                        'glow-pink': '0 10px 30px -10px rgba(255, 0, 127, 0.3)'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- ESTILOS ADICIONAIS (SCROLLBAR, BLUR, MASK) -->
+    <style>
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+        .nav-blur { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        .image-mask { border-radius: 2rem 10rem 2rem 2rem; }
+        a:focus-visible, button:focus-visible {
+            outline: 3px solid #FF007F;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-800 font-sans antialiased overflow-x-hidden selection:bg-brand-pink selection:text-white">
+
+    <!-- ==================== HEADER / NAVEGAÇÃO ==================== -->
+    <header class="fixed w-full top-0 z-50 nav-blur border-b border-gray-100 transition-all duration-300" id="navbar" role="banner">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                <!-- LOGO (link para a página inicial) -->
+                <a href="index.html" class="flex-shrink-0 flex items-center transition-transform hover:opacity-80" aria-label="Página inicial Doghood">
+                    <img class="h-10 w-auto object-contain" src="logo.png" alt="Doghood Logo">
+                </a>
+                
+                <!-- NAVEGAÇÃO PRINCIPAL (DESKTOP) -->
+                <nav class="hidden md:flex space-x-12 items-center" aria-label="Navegação principal">
+                    <a href="index.html#sobre" class="text-gray-500 text-xs font-semibold uppercase tracking-widest hover:text-brand-teal transition-colors">A Essência</a>
+                    <a href="index.html#servicos" class="text-gray-500 text-xs font-semibold uppercase tracking-widest hover:text-brand-teal transition-colors">Experiências</a>
+                    <a href="index.html#requisitos" class="text-gray-500 text-xs font-semibold uppercase tracking-widest hover:text-brand-teal transition-colors">Segurança</a>
+                    <a href="index.html#rotina" class="text-gray-500 text-xs font-semibold uppercase tracking-widest hover:text-brand-teal transition-colors">Rotina</a>
+                    <a href="index.html#diferenciais" class="text-gray-500 text-xs font-semibold uppercase tracking-widest hover:text-brand-teal transition-colors">Diferenciais</a>
+                    <a href="index.html#contato" class="text-gray-500 text-xs font-semibold uppercase tracking-widest hover:text-brand-teal transition-colors">Contato</a>
+                    
+                    <a href="index.html#cta" class="bg-brand-teal text-white px-8 py-3.5 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-brand-pink hover:shadow-glow-pink transition-all duration-300">
+                        Agendar Visita
+                    </a>
+                </nav>
+
+                <!-- BOTÃO MENU MOBILE -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-brand-teal p-2 focus:outline-none" aria-label="Abrir menu mobile" aria-expanded="false" aria-controls="mobile-menu">
+                        <i class="fas fa-bars text-2xl" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== CONTEÚDO PRINCIPAL ==================== -->
+    <main class="pt-40 pb-24 lg:pt-52 lg:pb-32 bg-white">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-brand-pink text-xs font-bold uppercase tracking-widest">Transparência</span>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-brand-teal mt-4 mb-6">Política de Privacidade</h1>
+                <p class="text-gray-500 text-lg font-light">Última atualização: 10 de março de 2026</p>
+            </div>
+
+            <div class="prose prose-lg prose-gray mx-auto space-y-8 text-gray-600 font-light leading-relaxed">
+                <p>A Doghood Daycare valoriza a privacidade dos seus clientes e visitantes. Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e protegemos as informações pessoais fornecidas por você ao utilizar nosso site e serviços.</p>
+
+                <h2 class="text-2xl font-bold text-brand-teal mt-8">1. Informações que coletamos</h2>
+                <p>Podemos coletar as seguintes informações:</p>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li><strong>Dados de identificação:</strong> nome completo, endereço de e-mail, número de telefone, CPF, endereço residencial (quando necessário para prestação dos serviços).</li>
+                    <li><strong>Informações sobre seu pet:</strong> nome, idade, raça, histórico de saúde, vacinas, comportamento.</li>
+                    <li><strong>Dados de navegação:</strong> endereço IP, tipo de navegador, páginas acessadas, tempo de visita, cookies (consulte nossa <a href="cookies.html" class="text-brand-pink hover:underline">Política de Cookies</a>).</li>
+                    <li><strong>Informações de pagamento:</strong> dados de cartão de crédito ou outras formas de pagamento são processados por gateways seguros e não armazenamos números completos.</li>
+                </ul>
+
+                <h2 class="text-2xl font-bold text-brand-teal mt-8">2. Como usamos suas informações</h2>
+                <p>Utilizamos seus dados para:</p>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>Prestar os serviços contratados (creche, hotel, avaliação comportamental).</li>
+                    <li>Enviar comunicações relacionadas aos serviços, como confirmações, lembretes e atualizações.</li>
+                    <li>Melhorar nosso site e a experiência do usuário.</li>
+                    <li>Cumprir obrigações legais e regulatórias.</li>
+                    <li>Enviar materiais promocionais (mediante seu consentimento, que pode ser revogado a qualquer momento).</li>
+                </ul>
+
+                <h2 class="text-2xl font-bold text-brand-teal mt-8">3. Compartilhamento de informações</h2>
+                <p>Não vendemos, alugamos ou compartilhamos suas informações pessoais com terceiros, exceto:</p>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>Prestadores de serviços essenciais (processadores de pagamento, parceiros de logística) que atuam sob contrato e seguem rigorosos padrões de segurança.</li>
+                    <li>Autoridades judiciais ou governamentais, quando exigido por lei.</li>
+                </ul>
+
+                <h2 class="text-2xl font-bold text-brand-teal mt-8">4. Armazenamento e segurança</h2>
+                <p>Adotamos medidas técnicas e organizacionais para proteger seus dados contra acesso não autorizado, perda ou destruição. Seus dados são armazenados em servidores seguros e o acesso é restrito a colaboradores autorizados.</p>
+
+                <h2 class="text-2xl font-bold text-brand-teal mt-8">5. Seus direitos</h2>
+                <p>Você tem direito a:</p>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>Solicitar acesso, correção ou exclusão de seus dados pessoais.</li>
+                    <li>Revogar consentimentos anteriormente concedidos.</li>
+                    <li>Obter informações sobre o compartilhamento de seus dados.</li>
+                </ul>
+                <p>Para exercer seus direitos, entre em contato pelo e-mail <a href="mailto:contato@doghood.com.br" class="text-brand-pink hover:underline">contato@doghood.com.br</a>.</p>
+
+                <h2 class="text-2xl font-bold text-brand-teal mt-8">6. Alterações nesta política</h2>
+                <p>Esta política pode ser atualizada periodicamente. A versão mais recente estará sempre disponível em nosso site. Recomendamos que você a revise regularmente.</p>
+
+                <p class="mt-8 pt-4 border-t border-gray-200">Em caso de dúvidas sobre esta Política de Privacidade, entre em contato conosco.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- ==================== FOOTER (IDÊNTICO AO INDEX) ==================== -->
+    <footer class="bg-gray-900 text-gray-400 py-20 border-t-8 border-brand-pink" role="contentinfo">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 md:grid-cols-12 gap-16">
+            <div class="md:col-span-5 space-y-8">
+                <img src="logo.png" alt="Doghood Daycare" class="h-12 brightness-0 invert opacity-90 object-contain">
+                <p class="text-sm leading-relaxed max-w-sm font-light text-gray-400">
+                    O refúgio urbano do Belenzinho dedicado exclusivamente à diversão, segurança e bem-estar de cães de pequeno e médio porte.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#" target="_blank" rel="noopener" class="text-gray-500 hover:text-brand-pink transition" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank" rel="noopener" class="text-gray-500 hover:text-brand-pink transition" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" class="text-gray-500 hover:text-brand-pink transition" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <div class="md:col-span-3">
+                <h5 class="text-white font-semibold uppercase tracking-widest text-xs mb-8">Navegação</h5>
+                <ul class="space-y-3 text-sm font-light">
+                    <li><a href="index.html#sobre" class="hover:text-white transition">A Essência</a></li>
+                    <li><a href="index.html#servicos" class="hover:text-white transition">Experiências</a></li>
+                    <li><a href="index.html#requisitos" class="hover:text-white transition">Segurança</a></li>
+                    <li><a href="index.html#rotina" class="hover:text-white transition">Rotina</a></li>
+                    <li><a href="index.html#diferenciais" class="hover:text-white transition">Diferenciais</a></li>
+                    <li><a href="index.html#contato" class="hover:text-white transition">Contato</a></li>
+                    <li><a href="index.html#cta" class="hover:text-white transition">Agendar Visita</a></li>
+                </ul>
+            </div>
+            
+            <div class="md:col-span-4">
+                <h5 class="text-white font-semibold uppercase tracking-widest text-xs mb-8">Onde Estamos</h5>
+                <ul class="space-y-5 text-sm font-light">
+                    <li class="flex items-start gap-4">
+                        <i class="fas fa-map-marker-alt mt-1 text-brand-pink" aria-hidden="true"></i>
+                        <span>Rua Siqueira Bueno, 2599<br>Belenzinho, São Paulo - SP</span>
+                    </li>
+                    <li class="flex items-center gap-4">
+                        <i class="fab fa-whatsapp text-brand-pink text-lg" aria-hidden="true"></i>
+                        <span>(11) 99999-9999</span>
+                    </li>
+                    <li class="flex items-center gap-4">
+                        <i class="far fa-clock text-brand-pink" aria-hidden="true"></i>
+                        <span>Seg a Sex: 07h-19h | Sáb: 08h-14h</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 mt-20 pt-8 border-t border-gray-800">
+            <div class="flex flex-col md:flex-row justify-between items-center text-xs uppercase tracking-widest font-semibold text-gray-600 gap-4">
+                <p>&copy; 2026 Doghood Daycare. Todos os direitos reservados.</p>
+                <p><span class="text-gray-500">CNPJ:</span> 30.573.826/0001-00</p>
+                <p>Design por <a href="https://redesigner.com.br" target="_blank" rel="noopener" class="text-gray-400 hover:text-white transition">REDESIGNER PPM</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÕES FLUTUANTES -->
+    <button id="back-to-top" onclick="window.scrollTo({top:0, behavior:'smooth'})" class="fixed bottom-24 right-6 bg-white text-brand-teal w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 translate-y-4 transition-all duration-300 z-40 border border-gray-100 hover:bg-gray-50" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+    <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" class="fixed bottom-6 right-6 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-xl hover:scale-110 transition-transform z-40" aria-label="Fale conosco pelo WhatsApp">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <!-- SCRIPTS -->
+    <script>
+        const btnMobile = document.getElementById('mobile-menu-btn');
+        btnMobile.addEventListener('click', () => {
+            alert('Funcionalidade de menu mobile a ser implementada. Aqui você pode abrir um menu lateral.');
+        });
+
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('navbar');
+            const btnTop = document.getElementById('back-to-top');
+            
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-sm');
+            } else {
+                header.classList.remove('shadow-sm');
+            }
+
+            if (window.scrollY > 400) {
+                btnTop.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
+                btnTop.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto');
+            } else {
+                btnTop.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
+                btnTop.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+            }
+        });
+    </script>
+</body>
+</html>
