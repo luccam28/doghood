@@ -8,11 +8,55 @@
     <link rel="icon" type="image/png" href="logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fraunces:ital,wght@0,600;0,700;0,800;1,300;1,400;1,500&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>tailwind.config={theme:{extend:{fontFamily:{sans:['"Plus Jakarta Sans"'],display:['Fraunces']},colors:{brand:{teal:'#044A53',pink:'#FF007F'}}}}}</script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['"Plus Jakarta Sans"'], display: ['Fraunces'] },
+                    colors: { brand: { teal: '#044A53', pink: '#FF007F' } }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-white">
-    <header class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur border-b"><div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-24"><a href="index.html"><img class="h-10" src="logo.png"></a><nav><a href="index.html#cta" class="bg-brand-teal text-white px-8 py-3 rounded-full">Agendar Visita</a></nav></div></header>
-    <main class="pt-40 pb-24"><div class="max-w-4xl mx-auto px-6"><h1 class="text-4xl font-bold text-brand-teal text-center mb-8">LGPD – Lei Geral de Proteção de Dados</h1><div class="prose text-gray-600 space-y-6"><p>A Doghood Daycare está comprometida com a proteção dos seus dados pessoais nos termos da Lei nº 13.709/2018 (LGPD).</p><h2 class="text-2xl font-bold text-brand-teal">Seus direitos como titular</h2><ul><li>Confirmação da existência de tratamento;</li><li>Acesso aos seus dados;</li><li>Correção de dados incompletos ou desatualizados;</li><li>Anonimização, bloqueio ou eliminação de dados desnecessários;</li><li>Portabilidade dos dados (mediante regulamentação);</li><li>Eliminação dos dados tratados com consentimento;</li><li>Informação sobre compartilhamento;</li><li>Revogação do consentimento.</li></ul><h2 class="text-2xl font-bold text-brand-teal">Base legal para tratamento</h2><p>Tratamos seus dados para execução de contrato, cumprimento de obrigação legal, legítimo interesse, e mediante seu consentimento quando necessário.</p><h2 class="text-2xl font-bold text-brand-teal">Encarregado (DPO)</h2><p>Seu encarregado pela proteção de dados é <strong>Paula Martins</strong> – e-mail: <a href="mailto:dpo@doghood.com.br" class="text-brand-pink">dpo@doghood.com.br</a>.</p><h2 class="text-2xl font-bold text-brand-teal">Como exercer seus direitos</h2><p>Envie uma mensagem para dpo@doghood.com.br ou use o formulário de contato do site. Responderemos em até 15 dias.</p><p class="bg-brand-surface p-4 rounded-xl mt-8">Para mais detalhes, consulte nossa <a href="privacidade.html" class="text-brand-pink">Política de Privacidade</a> e <a href="cookies.html" class="text-brand-pink">Política de Cookies</a>.</p></div></div></main>
-    <footer class="bg-gray-900 text-gray-400 py-12 text-center"><div class="max-w-7xl mx-auto px-6"><p>© 2026 Doghood Daycare | <a href="privacidade.html">Privacidade</a> | <a href="termos.html">Termos</a> | <a href="cookies.html">Cookies</a> | <a href="lgpd.html">LGPD</a></p></div></footer>
+    <header class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur border-b">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-24">
+            <a href="index.html"><img class="h-10" src="logo.png"></a>
+            <nav><a href="index.html#cta" class="bg-brand-teal text-white px-8 py-3 rounded-full">Agendar Visita</a></nav>
+        </div>
+    </header>
+    <main class="pt-40 pb-24">
+        <div class="max-w-4xl mx-auto px-6">
+            <h1 class="text-4xl font-bold text-brand-teal text-center mb-8">LGPD – Lei Geral de Proteção de Dados</h1>
+            <div class="prose text-gray-600 space-y-6">
+                <p>A Doghood Daycare está comprometida com a proteção dos seus dados pessoais nos termos da Lei nº 13.709/2018 (LGPD). Aqui você encontra informações claras sobre seus direitos e como exercê-los.</p>
+                <h2 class="text-2xl font-bold text-brand-teal">Seus direitos como titular</h2>
+                <ul>
+                    <li>Confirmação da existência de tratamento;</li>
+                    <li>Acesso aos seus dados;</li>
+                    <li>Correção de dados incompletos ou desatualizados;</li>
+                    <li>Anonimização, bloqueio ou eliminação de dados desnecessários;</li>
+                    <li>Portabilidade dos dados (mediante regulamentação);</li>
+                    <li>Eliminação dos dados tratados com consentimento;</li>
+                    <li>Informação sobre compartilhamento;</li>
+                    <li>Revogação do consentimento.</li>
+                </ul>
+                <h2 class="text-2xl font-bold text-brand-teal">Base legal para tratamento</h2>
+                <p>Tratamos seus dados para execução de contrato, cumprimento de obrigação legal, legítimo interesse, e mediante seu consentimento quando necessário.</p>
+                <h2 class="text-2xl font-bold text-brand-teal">Encarregado (DPO)</h2>
+                <p>Seu encarregado pela proteção de dados é <strong>Paula Martins</strong> – e-mail: <a href="mailto:dpo@doghood.com.br" class="text-brand-pink">dpo@doghood.com.br</a>.</p>
+                <h2 class="text-2xl font-bold text-brand-teal">Como exercer seus direitos</h2>
+                <p>Envie uma mensagem para dpo@doghood.com.br ou use o formulário de contato do site. Responderemos em até 15 dias.</p>
+                <p class="bg-brand-surface p-4 rounded-xl mt-8">Para mais detalhes, consulte nossa <a href="privacidade.html" class="text-brand-pink">Política de Privacidade</a> e <a href="cookies.html" class="text-brand-pink">Política de Cookies</a>.</p>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-gray-900 text-gray-400 py-12 text-center">
+        <div class="max-w-7xl mx-auto px-6">
+            <p>© 2026 Doghood Daycare | <a href="privacidade.html">Privacidade</a> | <a href="termos.html">Termos</a> | <a href="cookies.html">Cookies</a> | <a href="lgpd.html">LGPD</a></p>
+        </div>
+    </footer>
 </body>
 </html>
